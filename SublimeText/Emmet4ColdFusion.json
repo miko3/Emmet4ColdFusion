@@ -1,0 +1,29 @@
+{
+   // @File Name: Emmet4ColdFusion
+   // @Version  : 0.2
+   // @Draw up  : Miko
+
+   "snippets": {
+     "html": {
+       "snippets": {
+         "cfs":"<cfset ${1:var}=\"${2:comment}\">",
+         "cfo":"<cfoutput>#${1:comment}#</cfoutput>",
+         "cfd":"<cfdump var=\"#${1:comment}#\">",
+         "cfq":"<cfquery name=\"${1:name}\" datasource=\"${2:datasource}\" username=\"${3:username}\" password=\"${4:password}\">",
+         "cfsc":"<cfscript>\n\t${child}\n</cfscript>",
+         "cft":"<cftry>${\n\t}${child}\n</cftry>",
+         "cfca":"<cfcatch>${\n\t}${child}\n</cfcatch>",
+         "cff":"<cffunction name=\"${1:name}\" returnType=\"${2:rType}\" access=\"${3:access}\">",
+         "cfa":"<cfargument name=\"${1:name}\" type=\"${2:type}\" default=\"${3:default}\">",
+         "cfif":"<cfif ${1:tag1} EQ ${2:tag2}>${\n\t}${child}\n</cfif>",
+         "cfelseif":"<cfif ${1:tag1} EQ ${2:tag2}>${\n\t}${child}\n<cfelse>${\n\t}${child}\n</cfif>",
+         "cfl":"<cfloop query = \"${1:query}\">\n\t${2:code}\n</cfloop>",
+         "cfli":"<cfloop index = \"${1:index}\" from = \"${2:from}\" to = \"${3:to}\">\n\t${4:code}\n</cfloop>",
+         "cfin":"<cfinclude template=\"${1:templateName}\">",
+         "cfcom":"<cfcomponent name=\"${1:comName}\" displayname=\"${2:disName}\" hint=\"${3:hint}\">\t${child}\n</cfcomponent>",
+         "cfobj":"<cfobject component=\"${1:comName}\" name=\"${2:name}\">",
+         "cfinv":"<cfinvoke component=\"#${1:objComName}#\" method=\"${2:methodName}\" returnvariable=\"${3:retVarName}\">"
+      }
+    }
+  }
+}
